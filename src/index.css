@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Anton", "sans-serif";
+}
+
+
+/* NAVBAR STYLING START */
+
+.nav {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.nav-round {
+  height: 50px;
+  width: 80%;
+  border-radius: 50px;
+  border: solid 2px black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  /* semi-transparent */
+  backdrop-filter: blur(10px);
+  /* blur background behind it */
+  -webkit-backdrop-filter: blur(10px);
+  /* Safari support */
+
+
+  /* soft border */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  /* smooth shadow */
+
+}
+
+.nav-round a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+.link:hover {
+  transform: scale(2);
+  transition: ease;
+
+}
+
+
+.nav-round button {
+  background-color: black;
+  color: white;
+  font-size: large;
+  border: none;
+  padding: 5px 40px;
+  border-radius: 50px;
+  box-shadow: 2px 2px white;
+}
+
+
+
+/* Hero Section Start  */
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/public/background/1.png");
+  background-size: cover;
+  background-position: center center;
+  /* parent conatiner of counter */
+  position: relative;
+
+}
+
+/* DAYS COUNTER */
+.counter {
+  position: absolute;
+  background-color: white;
+  bottom: 30px;
+  right: 100px;
+  width: 50%;
+  height: 200px;
+  transition: transform 0.4s ease;
+  transform: rotateY(-25deg) rotateX(12deg);
+  transform-style: preserve-3d;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  box-shadow: 20px 20px black;
+  border: solid 1px black;
+
+}
+
+.flip-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label {
+  font-family: "Anton", sans-serif;
+  font-size: 32px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.digit {
+  position: relative;
+  width: 90px;
+  height: 110px;
+  font-family: "Anton", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 110px;
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  border: solid 1px black;
+
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+.logo {
+  width: 200px;
+}
+
+
+/* ABOT SECTION  */
+
+.about {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.good {
+
+  height: 100px;
+  display: flex;
+  align-items: last baseline;
+  border-bottom: solid 6px red;
+}
+
+.about-header {
+  padding: 10px 50px;
+  width: 200px;
+  background-color: red;
+  border: solid 1px black;
+  backdrop-filter: blur(10px);
+  margin-left: auto;
+  color: white;
+  box-shadow: -10px -10px white;
+
+}
+
+
+.cont {
+  display: flex;
+  justify-content: center;
+  background-color: green;
+  margin-top: 20px;
+
+}
+
+.about img {
+  width: 40%;
+  box-shadow: -10px 10px red;
+}
+
+
+.a {
+  margin-left: 20px;
+}
+
+.b {
+  text-align: center;
+  background-color: pink;
+}
