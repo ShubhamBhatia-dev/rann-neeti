@@ -8,7 +8,7 @@ export default function About() {
             <Divider text={"ABOUT ME"} ></Divider>
             <div className="cont">
                 <div className="a">
-                    <img src="/poster/fest.png" alt="" srcset="" />
+                    <img src="/poster/fest.png" alt="" />
                 </div>
                 <div className="b">
                     <h3>What's up</h3>

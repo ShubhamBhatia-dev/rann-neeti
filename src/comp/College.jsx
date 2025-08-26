@@ -15,18 +15,16 @@ export default function College() {
 
             <div className="wrapper">
                 <div className="imagediv">
-                    <img src="/background/iit-1.png" alt="" srcset="" />
+                    <img src="/background/iit-1.png" alt="" />
 
                 </div>
                 <div className="imagediv">
-                    <img src="/background/iit-2.png" alt="" srcset="" />
+                    <img src="/background/iit-2.png" alt="" />
                 </div>
                 <div className="imagediv">
-                    <img src="/background/iit-3.jpg" alt="" srcset="" />
+                    <img src="/background/iit-3.jpg" alt="" />
                 </div>
-                <div className="imagediv">
 
-                </div>
             </div>
 
             <div className="last">
@@ -38,8 +36,7 @@ export default function College() {
                 </div>
             </div>
 
-
-
+            <br ></br>
         </div>
     )
 }
