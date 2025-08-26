@@ -51,7 +51,6 @@
 
 }
 
-
 .nav-round button {
   background-color: black;
   color: white;
@@ -62,6 +61,10 @@
   box-shadow: 2px 2px white;
 }
 
+.nav-round button:active {
+  transform: scale(0.8);
+  transition: 1s ease;
+}
 
 
 /* Hero Section Start  */
@@ -69,7 +72,7 @@
 .hero {
   height: 100vh;
   width: 100%;
-  background-image: url("/public/background/1.png");
+  background-image: url("/background/1.png");
   background-size: cover;
   background-position: center center;
   /* parent conatiner of counter */
@@ -143,7 +146,6 @@
 }
 
 .good {
-
   height: 100px;
   display: flex;
   align-items: last baseline;
@@ -162,26 +164,217 @@
 
 }
 
+/* complemet of above divider */
+.good-c {
+  height: 100px;
+  display: flex;
+  align-items: last baseline;
+  border-bottom: solid 6px rgb(0, 0, 0);
+}
+
+.about-header-c {
+  padding: 10px 50px;
+  width: 200px;
+  background-color: rgb(255, 255, 255);
+  border: solid 1px rgb(0, 0, 0);
+  backdrop-filter: blur(10px);
+  margin-left: auto;
+  color: rgb(0, 0, 0);
+  box-shadow: -10px -10px rgb(0, 0, 0);
+
+}
 
 .cont {
   display: flex;
-  justify-content: center;
-  background-color: green;
-  margin-top: 20px;
+  justify-content: space-evenly;
+  margin-top: 40px;
 
 }
 
 .about img {
-  width: 40%;
-  box-shadow: -10px 10px red;
+  margin: none;
+  width: 480px;
+  box-shadow: -10px 10px rgb(255, 255, 255);
+
 }
 
 
 .a {
-  margin-left: 20px;
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
 }
 
+.a img:hover {
+  box-shadow: -10px 10px rgb(255, 0, 0);
+}
+
+
 .b {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
   text-align: center;
-  background-color: pink;
+  justify-content: center;
+  background-color: white;
+  border: solid 1px black;
+  box-shadow: -10px 10px white;
+}
+
+.b h3 {
+  font-size: 32px;
+  font-size: 100;
+}
+
+.b p {
+  font-size: 16px;
+}
+
+.b:hover {
+  box-shadow: -10px 10px rgb(255, 0, 0);
+}
+
+
+
+.detail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 230px;
+}
+
+.box {
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  box-shadow: -10px 10px red;
+  color: black;
+  text-align: center;
+  border: solid 1px black;
+}
+
+.box:hover {
+  background-color: red;
+  box-shadow: -10px 10px rgb(255, 255, 255);
+  color: white;
+  transition: ease-in;
+  transform: rotateX(10deg) rotateY(-30deg);
+}
+
+.box p {
+  margin-top: 10px;
+}
+
+.billu {
+  font-size: 32px;
+}
+
+.anim {
+  animation: float 2s ease-in-out infinite;
+  ;
+  will-change: transform;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.anim-d {
+  animation: floatd 2s ease-in-out infinite;
+  ;
+  will-change: transform;
+}
+
+@keyframes floatd {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+
+/* COLLEGE PICS-HOMEPAGE */
+
+.clg {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0.767);
+}
+
+.wrapper {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 50px;
+  max-height: 400px;
+
+}
+
+.imagediv {
+  height: 300px;
+  width: 250px;
+  background-color: aliceblue;
+  box-shadow: -10px 10px black;
+  border: solid 5px white;
+}
+
+.imagediv img {
+  width: 250px;
+  height: 300px;
+}
+
+
+/* LINK BUTTONS */
+
+.last {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#lasta,
+#lastb {
+  height: 90px;
+  border: solid 1px black;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lasta {
+  background-color: black;
+  box-shadow: -10px 10px white;
+  color: white;
+
+}
+
+#lasta:hover,
+#lastb:hover {
+  transform: scale(0.8);
+}
+
+#lastb {
+  background-color: rgb(255, 255, 255);
+  box-shadow: -10px 10px rgb(0, 0, 0);
+  color: black;
 }
