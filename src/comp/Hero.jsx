@@ -25,23 +25,23 @@ export default function Hero() {
             <Navbar></Navbar>
             <div className="counter">
                 <div className="logo">
-                    <img src="/logo.png" alt="" srcset="" className='logo' />
+                    <img src="/logo.png" alt="" className='logo' />
                 </div>
-                <div class="flip-unit">
-                    <span class="label">DAYS</span>
-                    <div class="digit" id="days">{days}</div>
+                <div className="flip-unit">
+                    <span className="label">DAYS</span>
+                    <div className="digit" id="days">{days}</div>
                 </div>
-                <div class="flip-unit">
-                    <span class="label">HRS</span>
-                    <div class="digit" id="hours">{hours}</div>
+                <div className="flip-unit">
+                    <span className="label">HRS</span>
+                    <div className="digit" id="hours">{hours}</div>
                 </div>
-                <div class="flip-unit">
-                    <span class="label">MIN</span>
-                    <div class="digit" id="minutes">{minutes}</div>
+                <div className="flip-unit">
+                    <span className="label">MIN</span>
+                    <div className="digit" id="minutes">{minutes}</div>
                 </div>
-                <div class="flip-unit">
-                    <span class="label">SEC</span>
-                    <div class="digit" id="seconds">{seconds}</div>
+                <div className="flip-unit">
+                    <span className="label">SEC</span>
+                    <div className="digit" id="seconds">{seconds}</div>
                 </div>
             </div>
         </div>

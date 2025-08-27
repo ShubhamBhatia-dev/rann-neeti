@@ -48,8 +48,8 @@ export default function Navbar() {
                             <button>×</button>
                         </div>
                         <div className="sidebar-links">
-                            <a href="#" className='anim' onClick={closeSidebar}>HOME</a>
-                            <a href="#" className='anim' onClick={closeSidebar}>EVENTS</a>
+                            <a href="/" className='anim' onClick={closeSidebar}>HOME</a>
+                            <a href="/Events" className='anim' onClick={closeSidebar}>EVENTS</a>
                             <a href="#" className='anim' onClick={closeSidebar}>GALLERY</a>
                             <a href="#" className='anim' onClick={closeSidebar}>TEAM</a>
                             <br />
